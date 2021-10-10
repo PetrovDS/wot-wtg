@@ -1,2 +1,4 @@
 config
 data
+tmp
+notebooks/draft.ipynb
