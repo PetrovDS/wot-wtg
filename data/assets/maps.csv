@@ -1,0 +1,57 @@
+id,work_name,name,standart,map_size
+1,01_karelia,Карелия,True,1000.0
+2,02_malinovka,Малиновка,True,1000.0
+3,03_campania_big,Провинция,True,850.0
+4,04_himmelsdorf,Химмельсдорф,True,700.0
+5,05_prohorovka,Прохоровка,True,1000.0
+6,06_ensk,Энск,True,600.0
+7,07_lakeville,Ласвилль,True,800.0
+8,08_ruinberg,Руинберг,True,850.0
+10,10_hills,Рудники,True,800.0
+11,11_murovanka,Мурованка,True,1000.0
+13,13_erlenberg,Эрленберг,True,1000.0
+14,14_siegfried_line,Линия Зигфрида,True,1000.0
+17,17_munchen,Уайдпарк,True,600.0
+18,18_cliff,Утёс,True,1000.0
+19,19_monastery,Монастырь,True,1000.0
+23,23_westfeld,Вестфилд,True,1000.0
+28,28_desert,Песчаная река,True,1000.0
+29,29_el_hallouf,Эль-Халлуф,True,1000.0
+31,31_airfield,Аэродром,True,1000.0
+33,33_fjord,Фьорды,True,850.0
+34,34_redshire,Редшир,True,1000.0
+35,35_steppes,Степи,True,1000.0
+36,36_fishing_bay,Рыбацкая бухта,True,1000.0
+37,37_caucasus,Перевал,True,1000.0
+38,38_mannerheim_line,Линия Маннергейма,True,1000.0
+44,44_north_america,Лайв Окс,True,1000.0
+45,45_north_america,Хайвей,True,1000.0
+47,47_canada_a,Тихий берег,True,1000.0
+59,59_asia_great_wall,Граница империи,True,1000.0
+60,60_asia_miao,Жемчужная река,True,1000.0
+63,63_tundra,Тундра,True,800.0
+83,83_kharkiv,Харьков,True,1000.0
+90,90_minsk,Минск,True,1050.0
+95,95_lost_city_ctf,Затерянный город,True,1000.0
+99,99_poland,Студзянки,True,1000.0
+101,101_dday,Оверлорд,True,1000.0
+105,105_germany,Берлин,True,1050.0
+112,112_eiffel_tower_ctf,Париж,True,1000.0
+114,114_czech,Промзона,True,1000.0
+115,115_sweden,Штиль,True,1000.0
+117,117_canyon_ish,Каньон,False,
+119,119_turning_point_if,Волга,False,
+120,120_graf_zeppelin_ish,Воздушная гавань,False,
+121,121_lost_paradise_v,Устричный залив,False,
+122,122_frozen_land,Ледник,False,
+123,123_dalny_gg,Дальний Восток,False,
+125,125_highground_v,Предгорья,False,
+126,126_asia_ravine_ish,Место силы,False,
+128,128_last_frontier_v,Застава,False,
+208,208_bf_epic_normandy,Нормандия,False,3000.0
+209,209_wg_epic_suburbia,Крафтверк,False,3000.0
+212,212_epic_random_valley,Небельбург,False,1400.0
+217,217_er_alaska,Клондайк,False,1400.0
+222,222_er_clime,Орловский выступ,False,1400.0
+250,250_br_battle_city2-1,Зона 404,False,2000.0
+251,251_br_battle_city3,Арзагир 4.04,False,2000.0
