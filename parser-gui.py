@@ -97,6 +97,7 @@ class MainWindow(QMainWindow):
         self.stop.value = 1
         for i in self.processes:
             i.join()
+            print(i.name, "joined")
 
     def load_settings(self):
         with open("data/logs/status.json", "r") as f:
@@ -111,7 +112,6 @@ class MainWindow(QMainWindow):
             self.table.setItem(i["row"], i["column"], item)
 
     def startProcess(self, num):
-        d_tanks = Array("i", list(self.tanks.wg_id.astype(int)))
         self.stop = Value("i", 0)
         self.cur_tank = Value("i", 0)
         self.processes = []
@@ -122,22 +122,32 @@ class MainWindow(QMainWindow):
 
 
 def parse(p_id, stop, cur_tank):
+    global mw
     while stop.value == 0:
         cur_tank.acquire()
         ct = cur_tank.value
         cur_tank.value += 1
-        if len(TANKS) == ct:
-            stop.value = 1
-            print("Ended by", p_id)
-            break
         cur_tank.release()
-        print("thread", p_id, TANKS.tag.iloc[ct])
-        sleep(1)
+        if len(TANKS) <= ct:
+            stop.value = 1
+            print("Ended by", p_id+1)
+            break
+        for _, map_ in MAPS.iterrows():
+            if stop.value == 1:
+                break
+            mw.labels[p_id].setText(
+                f"{p_id}: {TANKS.tag.iloc[ct]} | {map_.work_name}")
+            print("Process", p_id+1, TANKS.tag.iloc[ct], map_["name"])
+            sleep(1)
+        else:
+            continue
+    else:
+        print(p_id+1, "is closed")
 
 if __name__ == "__main__":
     import sys
     import os.path
-    
+    # global mw
     app = QApplication(sys.argv)
 
     mw = MainWindow()
@@ -149,3 +159,5 @@ if __name__ == "__main__":
     mw.startProcess(12)
 
     sys.exit(app.exec())
+
+
