@@ -1,3 +1,5 @@
 config
 tmp
 notebooks/draft.ipynb
+notebooks/.ipynb_checkpoints
+wrparser.py
